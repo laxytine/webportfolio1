@@ -1,0 +1,290 @@
+html {
+    scroll-behavior:smooth;
+    scroll-padding-top: 55px;
+}
+
+.body{
+    overflow-x: hidden;
+    background: linear-gradient(to top right, #70E7FF, #93AAA2);
+}
+
+
+#navbar{
+   font-family: "Eczar", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#landing {
+ background: 
+    linear-gradient(
+
+        rgba(0, 34, 65, 0.61),
+        rgba(0, 34, 65, 0.61)
+
+    ),
+    url("./images/landing.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 50, 0.1);
+    text-align: center;
+}
+
+#title{
+   font-family: "Eczar", serif;
+   font-weight: 700;
+   font-size: 80px;
+   line-height: 84px;
+   color: #EBEBEB;
+}
+
+#subtitle{
+   font-family: "Kanit", sans-serif;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 84px;
+   color: #EBEBEB;
+}
+
+
+#aboutme{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 10px;
+}
+
+.aboutmetext{
+   background: white;
+   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+   box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.25);
+   color: slategray;
+}
+
+#header{
+   font-family: "Kanit", sans-serif;
+   font-weight: 700;
+   font-size: auto;
+}
+
+.text{
+   font-family: "Raleway", sans-serif;
+   font-weight: 400;
+   font-size: 15px;
+   text-align: justify;
+   padding: 5;
+}
+
+#projects{
+   display: flex;
+   justify-content: center;
+   font-family: "Eczar", serif;
+   font-weight: 700;
+   font-size: 80px;
+   color: gray;
+  text-shadow: 0px 4px 23px rgba(0, 0, 0, 0.70);;
+  margin-top: 20px;
+  margin-bottom: 120px;
+
+}
+
+#projecttitle{
+   font-size: 100px;
+}
+
+.card-body{
+   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+   box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.25);
+   margin: 20px;
+   color: slategray;
+
+}
+
+.carousel .carousel-indicators button {
+    width: 10px;
+   height: 10px;
+   border-radius: 100%;
+ }
+
+
+#tools{
+   display: flex;
+   justify-content: center;
+   font-family: "Eczar", serif;
+   font-weight: 700;
+   font-size: 80px;
+   color: white;
+   text-shadow: 0px 4px 23px rgba(0, 0, 0, 0.70);
+   margin-top: 20px;
+   margin-bottom: 80px;
+   
+}
+
+#contact{
+   display: flex;
+   justify-content: center;
+   font-family: "Eczar", serif;
+   font-weight: 400;
+   font-size: auto;
+   color: #gray;
+}
+
+
+
+/* Media query for screens smaller than 768px (typically smartphones) */
+@media screen and (max-width: 767px) {
+
+   #landing{
+      width: 100vw;
+   }
+
+   #title{
+      font-size: 60px;
+      line-height: 50px;
+   }
+
+   #subtitle{
+      font-size: 18px;
+      line-height: 20px;
+   }
+
+   #chibi{
+      display: none !important;
+   }
+
+   #aboutme{
+      margin: 3px;
+      width: 100%;
+   }
+
+   .aboutmetext{
+      width: 100% !important;
+      font-size: 18px;
+      justify-content: center;
+   }
+
+   #projects{
+      display: flex;
+      justify-content: center;
+      margin-top: 3px !important;
+   }
+
+   .card-body{
+   flex-basis: 100%;
+   }
+
+   .tools{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 40px !important;
+   }
+
+   #core-tools{
+   justify-content:center;
+   margin-bottom: 20px !important;
+   }
+
+   #contact{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+   }
+
+   .contactme{
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      margin-bottom: 10px;
+   }
+
+   #map{
+      display: none;
+   }
+
+   .footer{
+      margin-top: 10px;
+   }
+
+
+}
+
+/* Media query for screens between 768px and 991px (typically tablets) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+   #landing{
+      width: 100vw;
+   }
+
+   #title{
+      font-size: 60px;
+      line-height: 50px;
+   }
+
+   #subtitle{
+      font-size: 18px;
+      line-height: 20px;
+   }
+
+
+   #aboutme{
+      margin: 0px;
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   .aboutmetext{
+      flex: 1;
+   }
+
+   #chibi{
+      flex: 1;
+      max-width: 400px;
+   }
+
+   #projects{
+      display: flex;
+      justify-content: center;
+      margin-top: 3px !important;
+   }
+
+   .card-body{
+   margin: 50px !important;
+   }
+
+   .tools{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 40px;
+   }
+
+   #core-tools{
+   justify-content:center;
+   margin-bottom: 20px !important;
+   }
+
+   #contact{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+   }
+
+   .contactme{
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      margin-bottom: 10px !important;
+   }
+
+   #map{
+      display: none;
+   }
+
+   .footer{
+      margin-top: 10px;
+   }
+
+}
+
+}
