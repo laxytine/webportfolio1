@@ -51,7 +51,8 @@ html {
    display: flex;
    justify-content: center;
    align-items: center;
-   margin: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
 }
 
 .aboutmetext{
@@ -235,6 +236,7 @@ html {
 
    .aboutmetext{
       flex: 1;
+      max-width: 50%;
    }
 
    #chibi{
